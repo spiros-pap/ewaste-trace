@@ -1,0 +1,36 @@
+{
+  "name": "ewaste-trace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "build": "hardhat compile",
+  "clean": "hardhat clean",
+  "test": "hardhat test",
+  "node": "hardhat node",
+  "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+  "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+  "coverage": "hardhat coverage"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^24.2.1",
+    "hardhat": "^2.26.2",
+    "hardhat-gas-reporter": "^2.3.0",
+    "prettier": "^3.6.2",
+    "solhint": "^6.0.0",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0"
+  }
+}
