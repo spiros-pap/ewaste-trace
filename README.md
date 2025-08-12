@@ -139,6 +139,7 @@ ewaste-trace/
 └── README.md
 
 ### Usage Guide
+
 1. Inspector:
   Search for UID (e.g., DEV-1000)
   View device details and full transfer history.
