@@ -65,35 +65,21 @@ Provides an **Inspector** role for transparency and audit.
 ## Setup & Running Locally
 
 ### 1) Install dependencies
-
-```bash
-# from project root
+#from project root
 npm install
 
 ### 2) Start local blockchain
-
-```bash
 npx hardhat node
 
 (Keep this terminal open as it outputs funded test accounts and private keys.)
 
 ### 3) Deploy the contract
 In a new terminal:
-
-```bash
 npx hardhat run scripts/deploy.ts --network localhost
 
 Copy the deployed contract address.
 
-### 1) Install dependencies
-
-```bash
-# from project root
-npm install
-
-### 4) Seed roles & demo data
-
-```bash
+### 4) Seed roles & demo data 
 npx hardhat run scripts/seed.ts --network localhost --addr <DEPLOYED_CONTRACT_ADDRESS>
 
 This assigns:
@@ -107,34 +93,28 @@ Account #4 → Recycler
 And inserts sample devices and full transfer history.
 
 ### 5) Set up the front-end
-
-```bash
 cd app
 npm install
 
 (this step is not needed in future extension)
 Create .env in app/
 
-```ini
 VITE_CONTRACT_ADDRESS=<DEPLOYED_CONTRACT_ADDRESS>
 VITE_RPC_URL=http://127.0.0.1:8545
 
 ### 6) Run the UI
-
-```bash
 npm run dev
 
 Visit http://localhost:5173
 
 ### 7) MetaMask setup
-
 Add Hardhat Localhost network:
   RPC: http://127.0.0.1:8545
   Chain ID: 31337
 
 Import Accounts #0–#4 from Hardhat node output (use private keys).
 
-###Project Structure
+### Project Structure
 
 ewaste-trace/
 ├── contracts/             # Solidity smart contracts
@@ -158,7 +138,7 @@ ewaste-trace/
 ├── postcss.config.js
 └── README.md
 
-###Usage Guide
+### Usage Guide
 1. Inspector:
   Search for UID (e.g., DEV-1000)
   View device details and full transfer history.
@@ -178,7 +158,7 @@ ewaste-trace/
 6.Recycler:
   Mark device as processed (Recycle / Destroy).
 
-###Future Extensions
+### Future Extensions
 
 Security & Governance
   Multi-sig admin; pausable emergency stop.
@@ -199,5 +179,5 @@ Deployment
   Testnet (Sepolia) & Etherscan verification.
   CI/CD with tests & build.
 
-###License
+### License
 MIT
