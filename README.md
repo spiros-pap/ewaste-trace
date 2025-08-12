@@ -180,23 +180,23 @@ ewaste-trace/
 ### Future Extensions
 
 Security & Governance
-  Multi-sig admin; pausable emergency stop.
+  -Multi-sig admin; pausable emergency stop.
 
 Data Integration
-  IPFS/Arweave file storage (e.g., disposal certificates).
-  CSV/PDF export for audit.
+  -IPFS/Arweave file storage (e.g., disposal certificates).
+  -CSV/PDF export for audit.
 
 IoT/Oracles
-  GPS-verified carrier hops.
-  Automated SLA checks on delivery times.
+  -GPS-verified carrier hops.
+  -Automated SLA checks on delivery times.
 
 Tokenization
-  NFT per device (ERC-721) with full provenance.
-  Incentive schemes for recycling.
+  -NFT per device (ERC-721) with full provenance.
+  -Incentive schemes for recycling.
 
 Deployment
-  Testnet (Sepolia) & Etherscan verification.
-  CI/CD with tests & build.
+  -Testnet (Sepolia) & Etherscan verification.
+  -CI/CD with tests & build.
 
 ### License
 MIT
