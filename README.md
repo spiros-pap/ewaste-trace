@@ -93,8 +93,9 @@ Account #4 → Recycler
 And inserts sample devices and full transfer history.
 
 ### 5) Set up the front-end
-###`cd app`
-###`npm install`
+`cd app`
+
+`npm install`
 
 Create .env in app/
 
