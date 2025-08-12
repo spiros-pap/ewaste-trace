@@ -117,37 +117,37 @@ Import Accounts #0–#4 from Hardhat node output (use private keys).
 ### Project Structure
 ewaste-trace/
 
-├── contracts/ Solidity smart contracts
+├── contracts/ (Solidity smart contracts)
 
-├── scripts/ Deploy & seed scripts
+├── scripts/ (Deploy & seed scripts)
 
-├── test/  Contract tests (if added)
+├── test/  (Contract tests (if added))
 
-├── artifacts/  Hardhat build output (ignored in git)
+├── artifacts/  (Hardhat build output (ignored in git))
 
-├── cache/  Hardhat cache (ignored in git)
+├── cache/  (Hardhat cache (ignored in git))
 
-├── app/  Front-end (Vite + React + TS)
+├── app/  (Front-end (Vite + React + TS))
 
 │ ├── src/
 
-│ │ ├── components/  Role panels, Connect button, shared UI
+│ │ ├── components/  (Role panels, Connect button, shared UI)
 
-│ │ ├── hooks/  useRoles.ts, custom hooks
+│ │ ├── hooks/ ( useRoles.ts, custom hooks)
 
-│ │ ├── abi/  EwasteRegistry ABI
+│ │ ├── abi/  (EwasteRegistry ABI)
 
-│ │ ├── wagmi.ts  wagmi/viem config
+│ │ ├── wagmi.ts  (wagmi/viem config)
 
-│ │ ├── Inspector.tsx  Inspector view
+│ │ ├── Inspector.tsx  (Inspector view)
 
-│ │ ├── App.tsx  Main tab navigation
+│ │ ├── App.tsx  (Main tab navigation)
 
-│ │ └── index.css  Tailwind entrypoint
+│ │ └── index.css  (Tailwind entrypoint)
 
-│ ├── public/  Static assets
+│ ├── public/  (Static assets)
 
-│ └── .env  UI environment variables
+│ └── .env  (UI environment variables)
 
 ├── hardhat.config.ts
 
