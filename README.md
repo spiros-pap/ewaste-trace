@@ -37,7 +37,7 @@ Provides an **Inspector** role for transparency and audit.
 
 ### Front-end (Vite + React + TypeScript)
 - **Role-gated panels** for Admin, User, Green Point, Carrier, Recycler.
-- **Inspector tab** — public search by UID.
+- **Inspector tab** public search by UID.
 - Connects to Hardhat local blockchain via `wagmi` + `viem`.
 - Styling: TailwindCSS.
 
@@ -65,22 +65,22 @@ Provides an **Inspector** role for transparency and audit.
 ## Setup & Running Locally
 
 ### 1) Install dependencies
-#from project root
-npm install
+From project root
+`npm install`
 
 ### 2) Start local blockchain
-npx hardhat node
+`npx hardhat node`
 
 (Keep this terminal open as it outputs funded test accounts and private keys.)
 
 ### 3) Deploy the contract
 In a new terminal:
-npx hardhat run scripts/deploy.ts --network localhost
+`npx hardhat run scripts/deploy.ts --network localhost`
 
 Copy the deployed contract address.
 
 ### 4) Seed roles & demo data 
-npx hardhat run scripts/seed.ts --network localhost --addr <DEPLOYED_CONTRACT_ADDRESS>
+`npx hardhat run scripts/seed.ts --network localhost --addr <DEPLOYED_CONTRACT_ADDRESS>`
 
 This assigns:
 
@@ -93,17 +93,16 @@ Account #4 → Recycler
 And inserts sample devices and full transfer history.
 
 ### 5) Set up the front-end
-cd app
-npm install
+`cd app`
+`npm install`
 
-(this step is not needed in future extension)
 Create .env in app/
 
-VITE_CONTRACT_ADDRESS=<DEPLOYED_CONTRACT_ADDRESS>
-VITE_RPC_URL=http://127.0.0.1:8545
+`VITE_CONTRACT_ADDRESS=<DEPLOYED_CONTRACT_ADDRESS>`
+`VITE_RPC_URL=http://127.0.0.1:8545`
 
 ### 6) Run the UI
-npm run dev
+`npm run dev`
 
 Visit http://localhost:5173
 
