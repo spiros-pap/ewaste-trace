@@ -1,4 +1,4 @@
-# e-Waste Tracea
+# e-Waste Trace
 
 End-to-end blockchain-based traceability for electronic waste items.  
 Tracks the full lifecycle from **User disposal** → **Green Point collection** → **Carrier logistics** → **Recycler processing**.  
